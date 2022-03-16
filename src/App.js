@@ -57,20 +57,18 @@ class App extends React.Component {
             <div className="App">
                 <header className="App-header">
                     <div className='left'>
-                        <h3>I could not complete step 3, but you have a list of all categories 	&#129303; &#9654;</h3>
+                        <h3>I could not complete step 3, but you have a list of all categories 	&#129303; &#9654; </h3>
                         <h2> All items:{this.state.isLoading ? 'Loading...' : this.state.data.items.item.length}</h2>
                         <ol>
                             {listItem}
                         </ol>
                     </div>
-
                     <div className='right'>
                     <h2>All categories : {this.state.isLoading ? 'Loading...' : this.state.categoryNames.length}</h2>
                     <ol>
                         {listItemCategories}
                     </ol>
                     </div>
-
                 </header>
             </div>
         );
